@@ -1,0 +1,32 @@
+<!DOCTYPE html><html><head><title>AudioClock test</title>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta charset="utf-8"></head><body>
+
+<script src="../../lib/WebModule.js"></script>
+<script>
+WebModule.verify  = __WEBMODULE_VERIFY__;
+WebModule.verbose = __WEBMODULE_VERBOSE__;
+WebModule.publish = __WEBMODULE_PUBLISH__;
+</script>
+
+__MODULES__
+__WMTOOLS__
+__SOURCES__
+__OUTPUT__
+__TEST_CASE__
+
+<canvas id="view" width="320" height="320"></canvas>
+<div id="fps"></div>
+<div id="userAgent"></div>
+<div id="methodName"></div>
+<script src="../30000.js"></script>
+<div id="pannel">
+    <button onclick="action(1)">setTimeout(4)</button>
+    <button onclick="action(2)">setInterval(16)</button>
+    <button onclick="action(3)">setImmdiate()</button>
+    <button onclick="action(4)">requestAnimationFrame()</button>
+    <button onclick="action(0)">stop</button>
+</div>
+
+</body></html>
+

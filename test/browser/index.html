@@ -1,0 +1,32 @@
+<!DOCTYPE html><html><head><title>AudioClock test</title>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta charset="utf-8"></head><body>
+
+<script src="../../lib/WebModule.js"></script>
+<script>
+WebModule.verify  = true;
+WebModule.verbose = true;
+WebModule.publish = true;
+</script>
+
+<script src="../../node_modules/uupaa.webaudio.js/lib/WebAudio.js"></script>
+<script src="../wmtools.js"></script>
+<script src="../../lib/AudioClock.js"></script>
+<script src="../../release/AudioClock.b.min.js"></script>
+<script src="../testcase.js"></script>
+
+<canvas id="view" width="320" height="320"></canvas>
+<div id="fps"></div>
+<div id="userAgent"></div>
+<div id="methodName"></div>
+<script src="../30000.js"></script>
+<div id="pannel">
+    <button onclick="action(1)">setTimeout(4)</button>
+    <button onclick="action(2)">setInterval(16)</button>
+    <button onclick="action(3)">setImmdiate()</button>
+    <button onclick="action(4)">requestAnimationFrame()</button>
+    <button onclick="action(0)">stop</button>
+</div>
+
+</body></html>
+
